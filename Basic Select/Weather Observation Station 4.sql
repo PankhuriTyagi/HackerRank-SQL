@@ -1,0 +1,1 @@
+select count(city) - count(distinct city) AS reqd_count from station;

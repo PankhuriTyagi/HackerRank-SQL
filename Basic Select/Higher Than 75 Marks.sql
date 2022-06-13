@@ -1,0 +1,6 @@
+SELECT Name
+FROM
+(SELECT Name, SUBSTR(Name,-3,3) AS ch
+FROM STUDENTS
+WHERE Marks > 75
+ORDER BY ch, ID) a;
